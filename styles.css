@@ -40,6 +40,16 @@ header a{
     position: absolute;
 }
 
+.tile{
+    width: 90px;
+    height: 90px;
+
+}
+
+.x2{
+    background-image: url("images\\cherry.jpg");
+}
+
 .scoreboard{
     position: absolute;
     width:320px;
