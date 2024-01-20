@@ -1,0 +1,28 @@
+body{
+    background-image: url("images\\FruitBack.png");
+}
+header{
+    background-color:rgba(13, 3, 52,0.8);
+    padding:8px;
+}
+header span{
+    
+    display: flex;
+    justify-content: center;
+}
+header span label{
+    font-size: 30px;
+    color: white;
+    font-family:'Franklin Gothic Medium';
+    padding-top: 5px;
+    padding-left: 3px;
+}
+header img{
+    width: 40px;
+}
+header a{
+    color:white;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
