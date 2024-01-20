@@ -26,3 +26,42 @@ header a{
     justify-content: right;
     padding-right: 10px;
 }
+
+.board{
+    width:400px;
+    height:400px;
+    background-color: rgba(70, 43, 103,0.9);
+    border: 6px solid rgb(18, 8, 37);
+    margin-top: 25px;
+    margin-left: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.scoreboard{
+    position: absolute;
+    width:320px;
+    height:120px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(70, 43, 103,0.9);
+    border: 6px solid rgb(18, 8, 37);
+    color: white;
+    margin-left:720px;
+    margin-top: 40px;
+}
+
+.scoreboard h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    margin-left: 3px;
+}
+
+.scoreboard h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 33px;
+}
+
