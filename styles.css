@@ -28,7 +28,7 @@ header a{
     margin-bottom: 3px;
 }
 
-.board{
+#board{
     width:400px;
     height:400px;
     background-color: rgba(70, 43, 103,0.9);
@@ -43,6 +43,9 @@ header a{
 .tile{
     width: 90px;
     height: 90px;
+    background-color: rgba(70, 43, 103,0.7);
+    border:5px solid rgb(18, 8, 37);
+    display: flex;
 
 }
 
