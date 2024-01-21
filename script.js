@@ -1,6 +1,7 @@
 var board;
 var score = 0;
 var rows = 4 , columns=4;
+let l=0,r=0,u=0,d=0;
 
 window.onload = function(){
     setGame();
@@ -75,20 +76,65 @@ function setGame(){
     }
 
     document.addEventListener("keyup" , (e) =>{
+        let oldscore = score;
         if(e.code == "ArrowLeft"){
             slideLeft();
+            if(oldscore==score)
+            {
+                l=1;
+            }
+            else{
+                l=0;
+                r=0;
+                u=0;
+                d=0;
+            }
         }
         else if(e.code == "ArrowRight"){
             slideRight();
+            if(oldscore==score)
+            {
+                r=1;
+            }
+            else{
+                l=0;
+                r=0;
+                u=0;
+                d=0;
+            }
         }
         else if(e.code == "ArrowUp"){
             slideUp();
+            if(oldscore==score)
+            {
+                u=1;
+            }
+            else{
+                l=0;
+                r=0;
+                u=0;
+                d=0;
+            }
         }
         else if(e.code == "ArrowDown"){
             slideDown();
+            if(oldscore==score)
+            {
+                d=1;
+            }
+            else{
+                l=0;
+                r=0;
+                u=0;
+                d=0;
+            }
+        }
+        if(l==1 && r==1 && u==1 && d==1 && !hasEmpty())
+        {
+            window.alert("Game Over");
         }
         setTile();
-        document.getElementsByTagName("h2").innerText=score;
+        document.getElementById("scores").innerText=score;
     })
 
 
