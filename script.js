@@ -2,6 +2,7 @@ var board;
 var score = 0;
 var rows = 4 , columns=4;
 let l=0,r=0,u=0,d=0;
+let tempscore=0;
 
 window.onload = function(){
     setGame();
@@ -134,6 +135,7 @@ function setGame(){
             window.alert("Game Over");
         }
         setTile();
+        document.getElementById("temp").innerText=score-oldscore;
         document.getElementById("scores").innerText=score;
     })
 
@@ -141,7 +143,6 @@ function setGame(){
     function slide(row)
     {
         row = row.filter(num =>  num!=0);
-
         for(let i=0;i<row.length-1;i++)
         {
             if (row[i] == row[i+1])
@@ -150,7 +151,7 @@ function setGame(){
                 row[i+1]=0;
                 score += row[i];
             }
-        }
+        }        
 
         row = row.filter(num =>  num!=0);
 

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="images\ficon.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        
         <script src="script.js"></script>
         <title>Fruits 2048</title>
     </head>
@@ -12,26 +13,29 @@
         <header>
             <span><img src="images\ficon.png">
             <label>Fruits 2048</label></span><br>
-            <a href="">Help?</a>
+            <a href="help.html">Help?</a>
         </header>
         <main>
+            <div class="left-sec">
             <div id="board">
-
             </div>
+            </div>
+            <div class="right-sec">
+            <div class="upper-right">
             <div class="scoreboard">
+                <div class="gif1"></div>
                 <h4>Your Score</h4><br>
                 <h2 id="scores">0</h2>
             </div>
-            <h3 class="last">Last Move Score</h3>
-            <div class="lasttile">
-                <div class="gif">
-                </div>
-                <h2 id="temp">0</h2>
-
+            </div>
+            <div class="lower-right">
+               <div class="lasttile">
+                  <div class="gif2"></div>
+                  <h4>Last Move Score</h4><br>
+                  <h2 id="temp">0</h2>
+               </div>
+            </div>
             </div>
         </main>
-        <footer>
-            <p>&copy; 2024 Fruits 2048. All rights reserved.</p>
-        </footer>
     </body>
 </html>
