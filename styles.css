@@ -47,7 +47,52 @@ header a{
 }
 
 .x2{
-    background-image: url("images\\cherry.jpg");
+    background-image: url("images\\2.jpg");
+}
+
+.x4{
+    background-image: url("images\\4.jpg");
+}
+
+.x8{
+    background-image: url("images\\8.jpg");
+}
+
+.x16{
+    background-image: url("images\\16.jpg");
+}
+
+
+.x32{
+    background-image: url("images\\32.jpg");
+}
+
+.x64{
+    background-image: url("images\\64.jpg");
+}
+
+.x128{
+    background-image: url("images\\128.jpg");
+}
+
+.x256{
+    background-image: url("images\\256.jpg");
+}
+
+.x512{
+    background-image: url("images\\512.jpg");
+}
+
+.x1024{
+    background-image: url("images\\1024.jpg");
+}
+
+.x2048{
+    background-image: url("images\\2048.jpg");
+}
+
+.x4096{
+    background-image: url("images\\4096.jpg");
 }
 
 .scoreboard{
