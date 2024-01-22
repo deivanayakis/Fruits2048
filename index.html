@@ -5,7 +5,6 @@
         <meta name="viewport" content="width= device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="images\ficon.png">
         <link rel="stylesheet" type="text/css" href="styles.css">
-        
         <script src="script.js"></script>
         <title>Fruits 2048</title>
     </head>
@@ -16,25 +15,30 @@
             <a href="help.html">Help?</a>
         </header>
         <main>
-            <div class="left-sec">
-            <div id="board">
+            <div class="popup" id="popup">
+                <img src="images/go.gif">
+                <h2>Game Over!!</h2>
+                <p>Sorry to say that you can't reach extreme..You can do it !!! Try Again!!</p>
+                <button type="button" onclick="closePopup()">OK</button>
             </div>
+            <div class="left-sec">
+               <div id="board"></div>
             </div>
             <div class="right-sec">
-            <div class="upper-right">
-            <div class="scoreboard">
-                <div class="gif1"></div>
-                <h4>Your Score</h4><br>
-                <h2 id="scores">0</h2>
-            </div>
-            </div>
-            <div class="lower-right">
-               <div class="lasttile">
-                  <div class="gif2"></div>
-                  <h4>Last Move Score</h4><br>
-                  <h2 id="temp">0</h2>
-               </div>
-            </div>
+              <div class="upper-right">
+                <div class="scoreboard">
+                   <div class="gif1"></div>
+                   <h4>Your Score</h4><br>
+                   <h2 id="scores">0</h2>
+                </div>
+              </div>
+              <div class="lower-right">
+                <div class="lasttile">
+                   <div class="gif2"></div>
+                   <h4>Last Move Score</h4><br>
+                   <h2 id="temp">0</h2>
+                </div>
+              </div>
             </div>
         </main>
     </body>

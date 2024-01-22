@@ -3,9 +3,19 @@ var score = 0;
 var rows = 4 , columns=4;
 let l=0,r=0,u=0,d=0;
 let tempscore=0;
+let popup1=document.getElementsByClassName("popup")
+console.log(popup1);
 
 window.onload = function(){
     setGame();
+}
+
+function openPopup(){
+    popup1.classList.add("open-popup");
+}
+
+function closePopup(){
+    popup1.classList.remove("open-popup");
 }
 
 function setGame(){
@@ -132,7 +142,8 @@ function setGame(){
         }
         if(l==1 && r==1 && u==1 && d==1 && !hasEmpty())
         {
-            window.alert("Game Over");
+            openPopup();
+            setGame();
         }
         setTile();
         document.getElementById("temp").innerText=score-oldscore;

@@ -6,28 +6,111 @@
         <link rel="icon" type="image/x-icon" href="images\ficon.png">
         <title>Fruits 2048</title>
         <style>
-            table,th{
-                border: 2px solid rgb(18, 8, 37);
+            body{
+                background-image: url("images/helpback.png");
+            }
+            table,tr,th{
+                border: 1px solid rgb(18, 8, 37);
+                margin: auto;
+                background-color: rgba(70, 43, 103,0.7);
+            }
+
+            td,th{
+                border: 1px solid rgb(18, 8, 37);
+                margin:auto;
+                font-size: 30px;
+                color: white;    
+            }
+
+            th{
+                background-color:rgba(70, 43, 103,0.9); ;
+            }
+
+            img{
+                padding: 10px;
+            }
+
+            h2{
+                display: flex;
+                justify-content: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 35px;
+                color: rgb(18, 8, 37);
+                background-color: aliceblue;
+            }
+
+            p{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(18, 8, 37); 
+                background-color: aliceblue;
             }
 
         </style>
     </head>
     <body>
         <h2>About Fruits 2048</h2>
-        <p><strong>Fruits 2048</strong> is a mathematical game which enhances our knowledge and make our brain active. There are powers of 2 (2,4,8,16,32,64....), eack of the numbers are represented by fruits(Refer) in the tiles of the board. You can merge two tile which has same fruit.Do merging and gain score until you can't to merge.Gain High Score and become master of brain.Let's Enjoy!</p>
+        <p><strong>Fruits 2048</strong> is a cognitive game designed to stimulate and enhance knowledge while keeping the mind active. The game involves powers of 2 (2, 4, 8, 16, 32, 64, and so on), each represented by different fruits on the game board tiles. Merge tiles with the same fruit to score points, and continue merging until no further merges are possible. Strive to achieve a high score and establish yourself as a master of strategic thinking. Let the enjoyment begin!</p>
         <table>
-            <th>
-                <td>Fruit</td>
-                <td>Powers of 2</td>
-            </th>
-            <tr>
-                <td id="pic"></td>
-                <td id="d2">2</td>
-            </tr>
-            <tr>
-                <td id="pic"></td>
-                <td id="d2">4</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Fruit</th>
+                    <th>Powers of 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/2.png"></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><img src="images/4.png"></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><img src="images/8.png"></td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td><img src="images/16.png"></td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td><img src="images/32.png"></td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td><img src="images/64.png"></td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td><img src="images/128.png"></td>
+                    <td>128</td>
+                </tr>
+                <tr>
+                    <td><img src="images/256.png"></td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td><img src="images/512.png"></td>
+                    <td>512</td>
+                </tr>
+                <tr>
+                    <td><img src="images/1024.png"></td>
+                    <td>1024</td>
+                </tr>
+                <tr>
+                    <td><img src="images/2048.png"></td>
+                    <td>2048</td>
+                </tr>
+                <tr>
+                    <td><img src="images/4096.png"></td>
+                    <td>4096</td>
+                </tr>
+                <tr>
+                    <td><img src="images/8192.png"></td>
+                    <td>8192</td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
