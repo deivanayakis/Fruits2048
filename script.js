@@ -14,9 +14,10 @@ function openPopup(){
     popup1.classList.toggle("open-popup");
 }
 
-function closePopup(){
+
+btn.addEventListener("click", function() {
     popup1.classList.toggle("open-popup");
-}
+  });
 
 function setGame(){
     board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
